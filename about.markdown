@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+웜블러드의 기술블로그입니다. 엔지니어링 문화, 철학, 접근법, 기술적 시도, 사례 등을 기록합니다.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+웜블러드 엔지니어링 문화에서는,
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+* 개인은 성장할 수 있다고 믿습니다. 성찰과 회고를 통해 오늘보다 내일이 더 나아질거라고 믿습니다.
+* 개인의 성장이 조직의 성장에 중요하다고 믿습니다.
+* 협력하는 팀의 능력은 개인의 능력의 합보다 크다고 믿습니다.
+* 협력을 통해 성장의 폭이 넓어지고 깊이가 깊어진다고 믿습니다.
+* 협력은 갈등을 수반하지만, 우리에게는 그것을 발전적 에너지로 바꿀 수 있는 가능성과 역량이 있다고 믿습니다.
 
-
-[jekyll-organization]: https://github.com/jekyll
+나도 자라고, 회사도 자라는 경험을 공유하며 함께 회사를 키워나갈 엔지니어분들을 기다리고 있습니다.

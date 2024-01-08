@@ -21,7 +21,7 @@
 title: Warmblood TechBlog
 email: contact@warmblood.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  웜블러드의 테크블로그
+  웜블러드의 기술블로그
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: warmblood-kr
