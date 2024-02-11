@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[WIP] 좀 더 효과적인 코드 리뷰를 향하여"
+title: "좀 더 효과적인 코드 리뷰를 향하여"
 date: 2024-02-11 18:48:00 +0900
 categories: dev-practice
 author: jeongsoo.park
