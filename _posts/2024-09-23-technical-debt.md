@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기술부채라는 용어를 만든 사람이 의도했던 원래 의미는?"
+title: "기술부채의 원래 의미는?"
 date: 2024-09-23 12:52:00 +0900
 categories: dev-practice
 author: jeongsoo.park
