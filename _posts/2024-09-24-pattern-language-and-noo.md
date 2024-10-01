@@ -4,7 +4,7 @@ title: "디자인 패턴, 패턴 언어, 질서의 본질"
 date: 2024-09-
 categories: dev-practice
 author: jeongsoo.park
-summary: 
+description: 
 image: 
 ---
 
@@ -33,12 +33,12 @@ CA의 TWOB은 79년, PL은 77년에 출간되었음.
 
 https://www.youtube.com/watch?v=_V0kVOLOCrY 워드의 인터뷰. The Starting Point of Software Patterns.
 
-
-
-
 Hillside Group, PLoP
 
-디자인 패턴은 설계 패턴임. 아키텍처 패턴, 구현 패턴, 리엔지니어링 패턴 등, 여러 종류, 여러 분야, 여러 층위의 패턴들이 있다. 그리고 지금도 패턴이 발굴되고 있다.
+디자인 패턴은 설계 패턴임. 아키텍처 패턴, 구현 패턴, 리엔지니어링 패턴 등, 여러 종류, 여러 분야, 여러 층위의 패턴들이 있다. PLoP는 매년 열리고 있고, 지금도 패턴이 발굴되고 있다. 
+
+
+## 패턴 언어, 크리스토퍼 알렉산더
 
 디자인 패턴. 패턴 언어. 크리스토퍼 알렉산더.
 
@@ -48,6 +48,11 @@ Hillside Group, PLoP
 
 패턴 언어란. 영원의 건축. 패턴 언어. 이 사람의 화두는 무엇이었을까.
 
+왜 그냥 '패턴'이라고 안하고 패턴 '언어'라고 했을까? 각 패턴 요소들의 조합이 단순 나열이 아니라 어떠한 의미 구조를 가지기 때문. 서로 관계가 있기 때문.
+
 CA의 ACM OOPSLA 96 기조연설.
 
-패턴 언어 그 이후, 질서의 본질에 대한 탐구. 그리고 The Nature of Order.
+
+## 패턴 언어 그 이후, 질서의 본질에 대한 탐구.
+
+그리고 The Nature of Order.
