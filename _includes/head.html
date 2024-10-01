@@ -1,3 +1,6 @@
+{% comment %}
+-*- engine: liquid -*-
+{% endcomment %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +10,9 @@
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
+  {%- endif -%}
+  {%- if jekyll.environment == 'production' and site.google_tagmanager -%}
+    {%- include google-tagmanager.html -%}
   {%- endif -%}
   {%- include custom-head.html -%}
 </head>
