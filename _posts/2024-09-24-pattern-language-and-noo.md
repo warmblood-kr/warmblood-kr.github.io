@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "디자인 패턴, 패턴 언어, 그리고 질서의 본질"
-date: 2024-09-24
+date: 2025-03-31
 categories: dev-practice
 author: jeongsoo.park
 description: 크리스토퍼 알렉산더의 패턴 언어, 소프트웨어 디자인 패턴, 그리고 'The Nature of Order'의 깊은 개념들 간의 연결을 탐구합니다.
