@@ -5,7 +5,7 @@ date: 2025-03-31
 categories: dev-practice
 author: jeongsoo.park
 description: 크리스토퍼 알렉산더의 패턴 언어, 소프트웨어 디자인 패턴, 그리고 'The Nature of Order'의 깊은 개념들 간의 연결을 탐구합니다.
-image: 
+image: /images/2025-03-31-pattern-language-and-noo.jpg
 ---
 
 이전 [기술 부채]({{ site.baseurl }}{% link _posts/2024-09-23-technical-debt.md %})에 대한 글에서 크리스토퍼 알렉산더와 패턴 언어에 대해 언급했습니다. 또한 소프트웨어 업계에서 패턴 언어를 적극적으로 수용한 결과로 나온 디자인 패턴에 대해 이야기했습니다.
@@ -38,6 +38,8 @@ GOF 디자인 패턴 책은 1995년에 출판되었지만, 그 태동은 그 몇
 
 
 ## 패턴 언어, 크리스토퍼 알렉산더
+
+![Concept of Pattern Language & NOO](/images/2025-03-31-pattern-language-and-noo.jpg)
 
 어떤 사람들은 디자인 패턴을 개발에 적용할 수 있는 일련의 고급 베스트 프랙티스로 여기고 열심히 공부하고 외웁니다. 디자인 패턴이 개발 분야에서 널리 알려졌지만, 그것은 패턴 언어의 하나의 사례에 불과합니다. 개인적으로 저는 디자인 패턴을 패턴 언어의 불완전한 적용이라고 부르고 싶습니다. 패턴 언어의 중요성과 가능성을 진정으로 이해하려면 우리는 크리스토퍼 알렉산더의 원래 아이디어를 봐야 합니다.
 
