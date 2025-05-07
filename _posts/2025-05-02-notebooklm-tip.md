@@ -21,7 +21,6 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 
 제가 NotebookLM으로 읽어봐야겠다고 생각한 첫 자료는, Fernando Flores가 쓴 "Understanding Computer and Cognition"이라는 책입니다. 
 
-----
 <br/>
 
 ## (영어로 된) 책이나 논문의 내용을 파악하는데 사용.
@@ -79,7 +78,6 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
 
-----
 <br/>
 
 ## 책에 안써있는 내용 물어보기
@@ -130,7 +128,6 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
 
-----
 <br/>
 
 ## 여러 책을 한 번에 읽기. 이종교배하기.
@@ -182,7 +179,6 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
 
-----
 <br/>
 
 ## 나의 현재 구체적인 과업에 적용하게 하기
@@ -316,6 +312,5 @@ Important Considerations (Korean):
 </blockquote>
 </details>
 
-----
 <br/>
 여러분은 노트북LM을 어떻게 활용하고 계신가요? 아래 댓글로 남겨주세요.
