@@ -2,7 +2,7 @@
 layout: post
 title: "정보의 표현으로서의 언어와 LLM"
 date: 2025-05-07 21:50:00 +0900
-categories: techstack
+categories: ai
 author: jeongsoo.park
 description: LLM은 Large "Language" Model입니다. 맞습니다, "언어"가 핵심이죠. 우리는 보통 언어를 인간의 말과 글로 한정해서 생각하지만, 실제로 언어의 개념은 훨씬 더 광범위합니다.
 image: "/images/2025-05-07-llm-with-extensible-language-cover.jpg"

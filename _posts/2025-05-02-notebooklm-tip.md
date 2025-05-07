@@ -2,7 +2,7 @@
 layout: post
 title: "NotebookLM 활용 팁 4가지"
 date: 2025-05-02 21:00:00 +0900
-categories: techstack
+categories: ai
 author: jeongsoo.park
 description: NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용해야 할지 몰랐었는데, 얼마 전에 한번 시간을 내어 탐구를 해봤습니다. 그 과정에서 이런 저런 실험들을 해보았는데, 사내에 공유했던 활용팁 4가지를 더 많은 분들과 나누기 위해 공개합니다.
 ---
