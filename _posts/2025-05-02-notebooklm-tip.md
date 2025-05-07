@@ -24,7 +24,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 
 ## (영어로 된) 책이나 논문의 내용을 파악하는데 사용.
 
-<details>
+<details markdown="1">
 <summary>"이 책의 개요를 설명해주세요."</summary>
 <blockquote>
 이 책, 테리 위노그라드와 페르난도 플로레스의 "컴퓨터와 인지 이해(Understanding Computers and Cognition)"는 인지와 언어에 대한 우리의 이해에 있어 지배적인 "합리주의적 전통"에 도전하면서 컴퓨터 기술 설계를 위한 새로운 토대를 제공하는 것을 목표로 합니다.
@@ -44,7 +44,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
 
-<details>
+<details markdown="1">
 <summary>"말씀하신 각 부분, '대안적인 이론적 배경', '컴퓨터와 표현을 비판적으로 검토', '설계를 위한 새로운 방향으로 나아감'의 구체적인 사례를 말해주세요."</summary>
 <blockquote>
 네, 책 "컴퓨터와 인지 이해"에서 제시된 대안적인 이론적 배경, 컴퓨터와 표현에 대한 비판적 검토, 그리고 설계를 위한 새로운 방향으로 나아가는 것에 대한 구체적인 사례들을 한국어로 설명해 드리겠습니다.
@@ -78,7 +78,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 
 ## 책에 안써있는 내용 물어보기
  
-<details>
+<details markdown="1">
 <summary>"이 책의 논지가, 최근의 generative AI, 특히 LLM을 통한 대화형 인터페이스, 그리고 reasoning model이 등장하여 마치 산업혁명 초기를 보는 것과 같이 폭발적인 다양한 시도가 발생하고 있는 현재 시점에, 어떤 시사점을 줄 수 있을까요?"</summary>
 <blockquote>
 이 책 "Understanding Computers and Cognition"의 논지는 현재 generative AI, 특히 LLM을 통한 대화형 인터페이스 및 reasoning model의 폭발적인 발전에 대해 다음과 같은 중요한 시사점을 던져줄 수 있습니다.
@@ -95,7 +95,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
  
-<details>
+<details markdown="1">
 <summary>"이 책의 논지, 그리고 referencing되는 개념들이, multi-agent를 만들어서 그들 간에 대화와 추론을 하게 하여 협력적인 과업을 달성하게 하려는 저의 연구과제에, 어떤 시사점이나 구체적인 적용점이 있을까요?"</summary>
 <blockquote>
 이 책은 전통적인 합리주의적 인공지능 관점, 즉 지능과 이해를 기호 조작과 논리적 문제 해결과 동일시하는 견해를 비판하며, 다중 에이전트 시스템 연구에 여러 중요한 시사점을 제공합니다.
@@ -125,7 +125,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 
 ## 여러 책을 한 번에 읽기. 이종교배하기.
  
-<details>
+<details markdown="1">
 <summary>"Gary Klein의 Decision making in action, Humberto Maturana의 The Tree of Knowledge를 추가했습니다. Maturana는 Fernando Flores가 사상적 영향을 받은 사람입니다. Gary Klein은 전문가의 인지적 전문성을 연구한 사람입니다. 이 세 가지 분야를 아우르고 관통하는 내용이 무엇인가요?"</summary>
 <blockquote>
 제공해주신 정보와 이전 대화를 바탕으로 Gary Klein의 자연주의적 의사 결정 연구, Humberto Maturana의 인지 이론 (특히 "Understanding Computers and Cognition"에서 드러나는 내용과 새로 추가된 "The Tree of Knowledge"를 고려), 그리고 Maturana로부터 Fernando Flores가 받은 사상적 영향, 이 세 가지 분야를 아우르고 관통하는 내용은 다음과 같습니다.
@@ -144,7 +144,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
  
-<details>
+<details markdown="1">
 <summary>"아주 구체적인 실천적인 요소에서 세 저작이 서로 상응하며 보완하고 강화하는 부분이 있습니까?"</summary>
 <blockquote>
 네, 아주 구체적인 실천적인 요소에서 세 저작이 서로 상응하며 보완하고 강화하는 부분을 찾을 수 있습니다. 핵심은 전통적인 규범적 모델의 한계를 인식하고, 실제 세계에서의 인간의 인지, 의사 결정, 그리고 행동의 특징을 더 깊이 이해하려는 노력에 있습니다.
@@ -173,7 +173,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 
 ## 나의 현재 구체적인 과업에 적용하게 하기
  
-<details>
+<details markdown="1">
 <summary>"각 전문 역할을 가진 agent들이 서로 협력하여 multi-agent로서 과업을 수행하는 multi-agent system을 만들려 합니다. 처음에는 인간이 과업을 주지만, 그 후에는 인간의 개입이 한동안 없어도 agent들끼리 서로 대화하고 협력하면서 과업을 수행합니다. 이런 시스템에 대해서, 각각의 저자는 어떤 조언이나 시사점을 말해줄까요?"</summary>
 <blockquote>
 네, 움베르토 마뚜라나의 이론을 테리 위노그라드의 논의와 마뚜라나 자신의 저서 "앎의 나무"를 바탕으로 하여, 다중 에이전트 시스템에 대한 몇 가지 조언과 시사점을 말씀드리겠습니다.
@@ -190,7 +190,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
  
-<details>
+<details markdown="1">
 <summary>"혹시 이런 점이 반영된 multi agent system을 python 코드로 표현해줄 수 있나요?"</summary>
 <blockquote>
 While the sources provide theoretical insights relevant to multi-agent systems, directly translating the comprehensive set of principles discussed into a fully featured Python code example is complex and would require significant abstraction and simplification. The sources, particularly "Understanding Computers and Cog" by Terry Winograd, critique the idea of simply programming intelligence or understanding into computers. Winograd argues that computer programs operate based on representations determined by their programmers, leading to inherent blindness. He emphasizes the importance of structural coupling and language as action (speech acts) for understanding human interaction and designing computer systems that support it. Gary Klein's work highlights the role of domain-specific knowledge (schemas) and naturalistic decision making in real-world scenarios.
@@ -280,7 +280,7 @@ Important Considerations (Korean):
 </blockquote>
 </details>
  
-<details>
+<details markdown="1">
 <summary>"마뚜라나, 플로레스, 게리의 핵심 내용을 담은 multi agent system으로 구현된다면, 어떤 점들을 설계 요소로 삼아야 할까요? 일종의 guideline이나 principle 같은?"</summary>
 <blockquote>
 마뚜라나, 플로레스, 게리의 핵심 내용을 담은 SW 다중 에이전트 시스템으로 구현된다면, 다음과 같은 점들을 설계 요소 또는 원칙으로 삼아야 할 것입니다.
