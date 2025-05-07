@@ -41,4 +41,4 @@ XML 외에도 다양한 도메인별 표현 언어가 존재합니다:
 
 마지막으로, 과거 GPT에서 외부 함수 호출 기능이 없었을 때 XML-RPC와 같은 구조화된 언어를 사용해 비슷한 기능을 구현한다면 이렇게 했을겁니다.
 
-![XML-RPC within LLM result](2025-05-07-llm-with-extensible-language.png)
+![XML-RPC within LLM result](/images/2025-05-07-llm-with-extensible-language.png)
