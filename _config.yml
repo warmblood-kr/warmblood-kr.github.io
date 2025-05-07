@@ -33,8 +33,6 @@ theme: minima
 plugins:
   - jekyll-feed
 markdown: kramdown
-kramdown:
-  parse_block_html: true
 
 show_excerpts: true
 
