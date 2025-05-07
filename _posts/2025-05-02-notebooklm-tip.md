@@ -22,6 +22,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 제가 NotebookLM으로 읽어봐야겠다고 생각한 첫 자료는, Fernando Flores가 쓴 "Understanding Computer and Cognition"이라는 책입니다. 
 
 ----
+<br/>
 
 ## (영어로 된) 책이나 논문의 내용을 파악하는데 사용.
 
@@ -44,6 +45,8 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 본질적으로 이 책은 합리주의에 뿌리를 둔 마음과 컴퓨터에 대한 전통적인 견해에 도전하고, 존재, 생물학, 그리고 행위로서의 언어에 기반한 새로운 이해를 제안하며, 이는 미래 컴퓨팅 기술 설계에 중요한 의미를 갖습니다.
 </blockquote>
 </details>
+
+<br/>
 
 <details>
 <summary>"말씀하신 각 부분, '대안적인 이론적 배경', '컴퓨터와 표현을 비판적으로 검토', '설계를 위한 새로운 방향으로 나아감'의 구체적인 사례를 말해주세요."</summary>
@@ -77,6 +80,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </details>
 
 ----
+<br/>
 
 ## 책에 안써있는 내용 물어보기
  
@@ -97,6 +101,8 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
  
+<br/>
+
 <details>
 <summary>"이 책의 논지, 그리고 referencing되는 개념들이, multi-agent를 만들어서 그들 간에 대화와 추론을 하게 하여 협력적인 과업을 달성하게 하려는 저의 연구과제에, 어떤 시사점이나 구체적인 적용점이 있을까요?"</summary>
 <blockquote markdown="1">
@@ -125,6 +131,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </details>
 
 ----
+<br/>
 
 ## 여러 책을 한 번에 읽기. 이종교배하기.
  
@@ -147,6 +154,8 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
  
+<br/>
+
 <details>
 <summary>"아주 구체적인 실천적인 요소에서 세 저작이 서로 상응하며 보완하고 강화하는 부분이 있습니까?"</summary>
 <blockquote markdown="1">
@@ -174,6 +183,7 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </details>
 
 ----
+<br/>
 
 ## 나의 현재 구체적인 과업에 적용하게 하기
  
@@ -194,6 +204,8 @@ NotebookLM을 작년 중반부터 여러번 소개받았지만 어떻게 활용�
 </blockquote>
 </details>
  
+<br/>
+
 <details>
 <summary>"혹시 이런 점이 반영된 multi agent system을 python 코드로 표현해줄 수 있나요?"</summary>
 <blockquote markdown="1">
@@ -284,6 +296,8 @@ Important Considerations (Korean):
 </blockquote>
 </details>
  
+<br/>
+
 <details>
 <summary>"마뚜라나, 플로레스, 게리의 핵심 내용을 담은 multi agent system으로 구현된다면, 어떤 점들을 설계 요소로 삼아야 할까요? 일종의 guideline이나 principle 같은?"</summary>
 <blockquote markdown="1">
@@ -303,5 +317,5 @@ Important Considerations (Korean):
 </details>
 
 ----
-
+<br/>
 여러분은 노트북LM을 어떻게 활용하고 계신가요? 아래 댓글로 남겨주세요.
