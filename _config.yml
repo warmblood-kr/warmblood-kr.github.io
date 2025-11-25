@@ -32,6 +32,7 @@ google_tagmanager: G-CFD8XYPE2J
 theme: minima
 plugins:
   - jekyll-feed
+markdown: kramdown
 
 show_excerpts: true
 
