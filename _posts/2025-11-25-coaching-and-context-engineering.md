@@ -19,6 +19,9 @@ image: "/images/2025-11-25-coaching-skill-to-llm.jpg"
 그리고, 지금 그 생각을 다시 꺼내봅니다 — LLM에게 컨텍스트 엔지니어링을 한다는 건 단순한 프롬프트 설계가 아니라, '대화의 깊이'를 만들어 가는 과정입니다. 그리고 이 과정은 코칭의 원리와 생각보다 닮아 있습니다.
 
 
+![Apply coaching skill to LLM](/images/2025-11-25-coaching-skill-to-llm.jpg)
+
+
 ## GROW 모델: 목표와 탐색의 구조를 가져오기
 
 코칭의 대표적인 프레임워크인 **GROW 모델(Goal–Reality–Options–Will)**은 컨텍스트 엔지니어링에도 유용합니다.
@@ -69,6 +72,7 @@ LLM과의 대화에서도 개념어를 정교하게 쓰는 것이 중요합니�
 
 개념어를 섬세하게 다룬다는 것은, 결국 사고의 해상도를 높이는 일입니다. 그리고 그 해상도가 바로 컨텍스트의 품질을 결정짓는 핵심입니다.
 
+![concept alignment between human and LLM](2025-11-25-concept-alignment.jpg)
 
 ## 라이프 코칭 vs LLM 코칭: 의지의 부재와 질문의 전환
 
