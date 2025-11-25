@@ -72,7 +72,7 @@ LLM과의 대화에서도 개념어를 정교하게 쓰는 것이 중요합니�
 
 개념어를 섬세하게 다룬다는 것은, 결국 사고의 해상도를 높이는 일입니다. 그리고 그 해상도가 바로 컨텍스트의 품질을 결정짓는 핵심입니다.
 
-![concept alignment between human and LLM](2025-11-25-concept-alignment.jpg)
+![concept alignment between human and LLM](/images/2025-11-25-concept-alignment.jpg)
 
 ## 라이프 코칭 vs LLM 코칭: 의지의 부재와 질문의 전환
 
