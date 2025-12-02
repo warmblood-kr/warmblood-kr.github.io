@@ -43,9 +43,12 @@ layout: default
       {%- endif -%}
     </p>
 
+    {%- comment -%}
+    Option 2: Remove post description entirely by commenting out this block
     {%- if page.description -%}
       <p class="post-description" itemprop="description">{{ page.description }}</p>
     {%- endif -%}
+    {%- endcomment -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
