@@ -1,0 +1,84 @@
+{%- comment -%}
+Related Posts Include
+Shows posts related to current post based on categories, with fallback to recent posts
+{%- endcomment -%}
+
+{%- assign max_related = 3 -%}
+{%- assign related_posts = '' | split: '' -%}
+
+{%- comment -%} First, try to find posts in the same category {%- endcomment -%}
+{%- if page.categories and page.categories.size > 0 -%}
+  {%- assign current_category = page.categories.first -%}
+  {%- for post in site.posts -%}
+    {%- if post.url != page.url and post.categories contains current_category -%}
+      {%- assign related_posts = related_posts | push: post -%}
+      {%- if related_posts.size >= max_related -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment -%} If not enough related posts, fill with recent posts {%- endcomment -%}
+{%- if related_posts.size < max_related -%}
+  {%- for post in site.posts -%}
+    {%- unless post.url == page.url -%}
+      {%- assign already_added = false -%}
+      {%- for related_post in related_posts -%}
+        {%- if related_post.url == post.url -%}
+          {%- assign already_added = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- unless already_added -%}
+        {%- assign related_posts = related_posts | push: post -%}
+        {%- if related_posts.size >= max_related -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- if related_posts.size > 0 -%}
+<section class="related-posts">
+  <h3>관련 포스트</h3>
+  <div class="related-posts-grid">
+    {%- for post in related_posts -%}
+    <article class="related-post-card">
+      {%- if post.image -%}
+      <div class="related-post-image">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+        </a>
+      </div>
+      {%- endif -%}
+
+      <div class="related-post-content">
+        <h4 class="related-post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h4>
+
+        <p class="related-post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+          {%- if post.author -%}
+            • {{ post.author }}
+          {%- endif -%}
+          {%- if post.categories.size > 0 -%}
+            • {{ post.categories.first }}
+          {%- endif -%}
+        </p>
+
+        {%- if post.description -%}
+        <p class="related-post-excerpt">{{ post.description | strip_html | truncatewords: 20 }}</p>
+        {%- elsif post.excerpt -%}
+        <p class="related-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        {%- endif -%}
+      </div>
+    </article>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
