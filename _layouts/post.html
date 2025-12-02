@@ -3,6 +3,31 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <!-- Enhanced Schema.org structured data for NLWeb -->
+  <meta itemprop="description" content="{{ page.description | default: page.excerpt | strip_html | truncatewords: 50 }}">
+  <meta itemprop="dateModified" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+  <meta itemprop="url" content="{{ page.url | absolute_url }}">
+  <meta itemprop="mainEntityOfPage" content="{{ page.url | absolute_url }}">
+
+  {%- if page.image -%}
+    <meta itemprop="image" content="{{ page.image | absolute_url }}">
+  {%- endif -%}
+
+  {%- if page.categories -%}
+    {%- for category in page.categories -%}
+      <meta itemprop="articleSection" content="{{ category }}">
+    {%- endfor -%}
+  {%- endif -%}
+
+  <!-- Publisher information for NLWeb -->
+  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization" style="display: none;">
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="url" content="{{ site.url }}">
+    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ site.url }}/images/logo.png">
+    </div>
+  </div>
+
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -11,8 +36,16 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+            <meta itemprop="url" content="{{ site.url }}">
+          </span>
+      {%- endif -%}
+    </p>
+
+    {%- if page.description -%}
+      <p class="post-description" itemprop="description">{{ page.description }}</p>
+    {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -20,6 +53,9 @@ layout: default
   </div>
 
   {%- include related-posts.html -%}
+
+  {%- comment -%} Include JSON-LD structured data for NLWeb {%- endcomment -%}
+  {%- include jsonld-blogposting.html -%}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

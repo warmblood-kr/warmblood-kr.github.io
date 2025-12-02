@@ -1,0 +1,73 @@
+{%- comment -%}
+JSON-LD structured data for NLWeb integration
+Provides comprehensive blog post metadata in machine-readable format
+{%- endcomment -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "{{ page.url | absolute_url }}",
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "headline": "{{ page.title | escape | jsonify }}",
+  "name": "{{ page.title | escape | jsonify }}",
+  "description": {{ page.description | default: page.excerpt | strip_html | truncatewords: 50 | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/logo.png"
+    }
+  },
+  {%- if page.image -%}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.image | absolute_url }}",
+    "width": 1200,
+    "height": 630
+  },
+  {%- endif -%}
+  {%- if page.categories and page.categories.size > 0 -%}
+  "articleSection": [
+    {%- for category in page.categories -%}
+    "{{ category }}"{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ],
+  "keywords": [
+    {%- for category in page.categories -%}
+    "{{ category }}"{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ],
+  {%- endif -%}
+  "inLanguage": "{{ site.lang | default: 'ko' }}",
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": "{{ site.url }}/#blog",
+    "name": "{{ site.title }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}"
+    }
+  },
+  "wordCount": {{ content | strip_html | number_of_words }},
+  "commentCount": 0,
+  "timeRequired": "PT{{ content | strip_html | number_of_words | divided_by: 200 | plus: 1 }}M",
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": ["{{ page.url | absolute_url }}"]
+  }
+}
+</script>
