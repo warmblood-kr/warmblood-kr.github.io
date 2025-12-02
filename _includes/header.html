@@ -1,0 +1,156 @@
+<header class="site-header">
+  <div class="wrapper">
+    <div class="header-content">
+
+      <!-- Logo and Site Title -->
+      <div class="header-brand">
+        <a class="site-title" href="{{ "/" | relative_url }}">
+          <div class="brand-logo">
+            <!-- Logo placeholder - can be replaced with actual logo -->
+            <div class="logo-icon">W</div>
+          </div>
+          <div class="brand-text">
+            <div class="site-name">{{ site.title | escape }}</div>
+            <div class="site-tagline">웜블러드 기술블로그</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="header-nav">
+        <div class="nav-links">
+          <a href="{{ "/" | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+            홈
+          </a>
+          <a href="{{ "/about/" | relative_url }}" class="nav-link {% if page.url == '/about/' %}active{% endif %}">
+            소개
+          </a>
+          <a href="https://warmblood.kr" target="_blank" class="nav-link external">
+            웜블러드
+            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Toggle -->
+        <div class="header-actions">
+          <button class="search-toggle" aria-label="검색">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle md:hidden" aria-label="메뉴 열기">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <div class="mobile-nav-links">
+        <a href="{{ "/" | relative_url }}" class="mobile-nav-link {% if page.url == '/' %}active{% endif %}">
+          홈
+        </a>
+        <a href="{{ "/about/" | relative_url }}" class="mobile-nav-link {% if page.url == '/about/' %}active{% endif %}">
+          소개
+        </a>
+        <a href="https://warmblood.kr" target="_blank" class="mobile-nav-link external">
+          웜블러드 메인사이트
+        </a>
+      </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" placeholder="포스트 검색..." class="search-input">
+          <button class="search-close" aria-label="검색 닫기">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="search-results">
+          <!-- Search results will be populated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- JavaScript for mobile menu and search functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const hamburger = document.querySelector('.hamburger');
+
+  mobileMenuToggle?.addEventListener('click', function() {
+    mobileNav.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+
+  // Search functionality
+  const searchToggle = document.querySelector('.search-toggle');
+  const searchOverlay = document.querySelector('.search-overlay');
+  const searchClose = document.querySelector('.search-close');
+  const searchInput = document.querySelector('.search-input');
+
+  searchToggle?.addEventListener('click', function() {
+    searchOverlay.classList.add('active');
+    searchInput.focus();
+  });
+
+  searchClose?.addEventListener('click', function() {
+    searchOverlay.classList.remove('active');
+    searchInput.value = '';
+  });
+
+  // Close search with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+      searchOverlay.classList.remove('active');
+      searchInput.value = '';
+    }
+  });
+
+  // Simple search functionality
+  if (searchInput) {
+    let searchTimeout;
+    searchInput.addEventListener('input', function() {
+      clearTimeout(searchTimeout);
+      const query = this.value.toLowerCase().trim();
+
+      if (query.length < 2) {
+        document.querySelector('.search-results').innerHTML = '';
+        return;
+      }
+
+      searchTimeout = setTimeout(() => {
+        // This is a basic client-side search
+        // In a real implementation, you might want to use Jekyll search plugins
+        performSearch(query);
+      }, 300);
+    });
+  }
+
+  function performSearch(query) {
+    // Placeholder for search functionality
+    // You can integrate with Jekyll search plugins or implement client-side search
+    const resultsContainer = document.querySelector('.search-results');
+    resultsContainer.innerHTML = `<div class="search-result">검색 기능은 곧 추가될 예정입니다.</div>`;
+  }
+});
+</script>

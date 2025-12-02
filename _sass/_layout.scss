@@ -1,0 +1,256 @@
+// Layout System for Warmblood TechBlog
+// Grid system, containers, and layout utilities
+
+// Container System
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+
+  &--sm {
+    max-width: 640px;
+  }
+
+  &--md {
+    max-width: 768px;
+  }
+
+  &--lg {
+    max-width: 1024px;
+  }
+
+  &--xl {
+    max-width: 1280px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 $spacing-md;
+  }
+}
+
+// Grid System
+.grid {
+  display: grid;
+  gap: $spacing-lg;
+
+  &--2 { grid-template-columns: repeat(2, 1fr); }
+  &--3 { grid-template-columns: repeat(3, 1fr); }
+  &--4 { grid-template-columns: repeat(4, 1fr); }
+
+  // Responsive grid
+  &--responsive {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  // Auto-sizing columns
+  &--auto {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  @media (max-width: $breakpoint-md) {
+    &--2,
+    &--3,
+    &--4 {
+      grid-template-columns: 1fr;
+    }
+
+    gap: $spacing-md;
+  }
+}
+
+// Flexbox Utilities
+.flex {
+  display: flex;
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--around {
+    justify-content: space-around;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--items-center {
+    align-items: center;
+  }
+
+  &--items-start {
+    align-items: flex-start;
+  }
+
+  &--items-end {
+    align-items: flex-end;
+  }
+
+  &--justify-center {
+    justify-content: center;
+  }
+
+  &--justify-start {
+    justify-content: flex-start;
+  }
+
+  &--justify-end {
+    justify-content: flex-end;
+  }
+}
+
+// Spacing Utilities
+.m {
+  &-0 { margin: 0; }
+  &-xs { margin: $spacing-xs; }
+  &-sm { margin: $spacing-sm; }
+  &-md { margin: $spacing-md; }
+  &-lg { margin: $spacing-lg; }
+  &-xl { margin: $spacing-xl; }
+  &-2xl { margin: $spacing-2xl; }
+  &-3xl { margin: $spacing-3xl; }
+
+  // Margin top
+  &t-0 { margin-top: 0; }
+  &t-xs { margin-top: $spacing-xs; }
+  &t-sm { margin-top: $spacing-sm; }
+  &t-md { margin-top: $spacing-md; }
+  &t-lg { margin-top: $spacing-lg; }
+  &t-xl { margin-top: $spacing-xl; }
+  &t-2xl { margin-top: $spacing-2xl; }
+
+  // Margin bottom
+  &b-0 { margin-bottom: 0; }
+  &b-xs { margin-bottom: $spacing-xs; }
+  &b-sm { margin-bottom: $spacing-sm; }
+  &b-md { margin-bottom: $spacing-md; }
+  &b-lg { margin-bottom: $spacing-lg; }
+  &b-xl { margin-bottom: $spacing-xl; }
+  &b-2xl { margin-bottom: $spacing-2xl; }
+
+  // Margin horizontal
+  &x-auto { margin-left: auto; margin-right: auto; }
+}
+
+.p {
+  &-0 { padding: 0; }
+  &-xs { padding: $spacing-xs; }
+  &-sm { padding: $spacing-sm; }
+  &-md { padding: $spacing-md; }
+  &-lg { padding: $spacing-lg; }
+  &-xl { padding: $spacing-xl; }
+  &-2xl { padding: $spacing-2xl; }
+}
+
+// Page Layout Structure
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  background: $bg-primary;
+  border-bottom: 1px solid $border-light;
+  box-shadow: $shadow-sm;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.site-main {
+  flex: 1;
+  padding: $spacing-2xl 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-xl 0;
+  }
+}
+
+.site-footer {
+  background: $bg-footer;
+  color: $white;
+  padding: $spacing-2xl 0;
+  margin-top: auto;
+}
+
+// Card Layout
+.card {
+  background: $bg-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+  padding: $spacing-lg;
+  border: 1px solid $border-light;
+  transition: all $transition-fast;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+
+  &--padded {
+    padding: $spacing-xl;
+  }
+
+  &--compact {
+    padding: $spacing-md;
+  }
+}
+
+// Section Dividers
+.section {
+  padding: $spacing-2xl 0;
+
+  &--sm {
+    padding: $spacing-lg 0;
+  }
+
+  &--lg {
+    padding: $spacing-3xl 0;
+  }
+
+  &--bg-secondary {
+    background: $bg-secondary;
+  }
+}
+
+// Responsive Utilities
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+@media (max-width: $breakpoint-sm) {
+  .sm\\:hidden { display: none; }
+  .sm\\:block { display: block; }
+}
+
+@media (min-width: $breakpoint-md) {
+  .md\\:block { display: block; }
+  .md\\:hidden { display: none; }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .lg\\:block { display: block; }
+  .lg\\:hidden { display: none; }
+}

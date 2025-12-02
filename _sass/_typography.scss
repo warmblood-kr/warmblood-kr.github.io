@@ -1,0 +1,220 @@
+// Typography System for Warmblood TechBlog
+// Professional typography scale and text styles
+
+// Heading Styles
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-md;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  margin-bottom: $spacing-lg;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  margin-top: $spacing-2xl;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-2xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  margin-top: $spacing-xl;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-xl;
+  margin-top: $spacing-lg;
+}
+
+h5 {
+  font-size: $font-size-lg;
+  margin-top: $spacing-lg;
+}
+
+h6 {
+  font-size: $font-size-base;
+  margin-top: $spacing-md;
+  font-weight: $font-weight-semibold;
+  color: $text-secondary;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// Body Text
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-relaxed;
+  margin-bottom: $spacing-md;
+  color: $text-primary;
+
+  &.lead {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $text-secondary;
+    margin-bottom: $spacing-lg;
+  }
+
+  &.small {
+    font-size: $font-size-sm;
+    color: $text-muted;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-bottom: $spacing-md;
+  padding-left: $spacing-lg;
+
+  li {
+    margin-bottom: $spacing-xs;
+    line-height: $line-height-normal;
+  }
+
+  ul, ol {
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $primary-red;
+  padding: $spacing-md $spacing-lg;
+  margin: $spacing-lg 0;
+  background: $bg-secondary;
+  border-radius: $radius-md;
+
+  p {
+    margin-bottom: $spacing-sm;
+    font-style: italic;
+    color: $text-secondary;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  cite {
+    display: block;
+    margin-top: $spacing-sm;
+    font-size: $font-size-sm;
+    color: $text-muted;
+    font-style: normal;
+
+    &:before {
+      content: "— ";
+    }
+  }
+}
+
+// Code and Preformatted Text
+code {
+  background: $gray-100;
+  padding: 2px 6px;
+  border-radius: $radius-sm;
+  font-family: 'SFMono-Regular', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 0.9em;
+  color: $primary-red-dark;
+}
+
+pre {
+  background: $gray-900;
+  color: $gray-100;
+  padding: $spacing-lg;
+  border-radius: $radius-lg;
+  overflow-x: auto;
+  margin: $spacing-lg 0;
+  font-family: 'SFMono-Regular', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: $font-size-sm;
+  line-height: $line-height-normal;
+
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    border-radius: 0;
+  }
+}
+
+// Emphasis and Strong
+em {
+  font-style: italic;
+  color: $text-secondary;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+  color: $text-primary;
+}
+
+// Links in content
+.post-content {
+  a {
+    color: $primary-red;
+    font-weight: $font-weight-medium;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all $transition-fast;
+
+    &:hover {
+      text-decoration-color: $primary-red;
+      color: $primary-red-dark;
+    }
+  }
+}
+
+// Meta text (dates, categories, etc.)
+.meta {
+  font-size: $font-size-sm;
+  color: $text-muted;
+  font-weight: $font-weight-normal;
+}
+
+// Text utilities
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-muted { color: $text-muted; }
+.text-light { color: $text-light; }
+.text-primary { color: $primary-red; }
+.text-secondary { color: $text-secondary; }
+
+.font-medium { font-weight: $font-weight-medium; }
+.font-semibold { font-weight: $font-weight-semibold; }
+.font-bold { font-weight: $font-weight-bold; }
+
+// Reading experience optimizations
+.post-content {
+  max-width: 65ch; // Optimal reading line length
+
+  h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: $spacing-xl; // For anchor links
+  }
+
+  // Better spacing for content sections
+  > * + * {
+    margin-top: $spacing-md;
+  }
+
+  > h1 + *,
+  > h2 + *,
+  > h3 + * {
+    margin-top: $spacing-sm;
+  }
+}
