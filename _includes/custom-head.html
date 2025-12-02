@@ -1,3 +1,33 @@
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon.png" | relative_url }}">
+<link rel="shortcut icon" href="{{ "/images/favicon.png" | relative_url }}">
+<link rel="apple-touch-icon" href="{{ "/images/favicon.png" | relative_url }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ "/images/default-card-image.avif" | absolute_url }}{% endif %}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.lang | default: 'ko_KR' }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ "/images/default-card-image.avif" | absolute_url }}{% endif %}">
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Site verification -->
 <meta name="naver-site-verification" content="ebc0d0fb2b8b8e991b20afe1b19b033087fa1bdd" />
 <meta name="google-site-verification" content="yZNHigbx-gQ7qupLLLSN9X5MJag1jduZxkC98UhHJAQ" />
 
