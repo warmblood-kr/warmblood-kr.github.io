@@ -1,9 +1,14 @@
 // Enhanced Syntax Highlighting for Warmblood TechBlog
 // Modern code highlighting with better readability
 
-// Base code block styling
+// Override Minima's default syntax highlighting
+.highlighter-rouge .highlight {
+  background: $gray-900 !important;
+}
+
+// Base code block styling - Override Minima defaults
 .highlight {
-  background: $gray-900;
+  background: $gray-900 !important;
   border-radius: $radius-lg;
   padding: $spacing-lg;
   margin: $spacing-lg 0;
@@ -75,7 +80,7 @@
   letter-spacing: 0.05em;
 }
 
-// Rouge syntax highlighting tokens
+// Rouge syntax highlighting tokens - Override Minima defaults
 .highlight {
   // Comments
   .c,    // Comment
@@ -84,7 +89,7 @@
   .c1,   // Comment.Single
   .cs    // Comment.Special
   {
-    color: #6b7280; // gray-500
+    color: #6b7280 !important; // gray-500
     font-style: italic;
   }
 
@@ -97,7 +102,7 @@
   .kr,   // Keyword.Reserved
   .kt    // Keyword.Type
   {
-    color: #f472b6; // pink-400
+    color: #f472b6 !important; // pink-400
     font-weight: $font-weight-medium;
   }
 
@@ -121,17 +126,17 @@
   .vg,   // Name.Variable.Global
   .vi    // Name.Variable.Instance
   {
-    color: #e5e7eb; // gray-200
+    color: #e5e7eb !important; // gray-200
   }
 
   // Functions
   .nf {
-    color: #60a5fa; // blue-400
+    color: #60a5fa !important; // blue-400
   }
 
   // Classes
   .nc {
-    color: #34d399; // emerald-400
+    color: #34d399 !important; // emerald-400
   }
 
   // Strings
@@ -150,7 +155,7 @@
   .s1,   // String.Single
   .ss    // String.Symbol
   {
-    color: #fbbf24; // amber-400
+    color: #fbbf24 !important; // amber-400
   }
 
   // Numbers

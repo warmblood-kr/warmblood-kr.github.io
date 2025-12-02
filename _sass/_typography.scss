@@ -91,17 +91,17 @@ ul, ol {
   }
 }
 
-// Blockquotes
+// Blockquotes - Override Minima defaults
 blockquote {
   border-left: 4px solid $primary-red;
   padding: $spacing-md $spacing-lg;
   margin: $spacing-lg 0;
   background: $bg-secondary;
   border-radius: $radius-md;
+  font-style: normal !important; // Override Minima's italic
 
   p {
     margin-bottom: $spacing-sm;
-    font-style: italic;
     color: $text-secondary;
 
     &:last-child {
